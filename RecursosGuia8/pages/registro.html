@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Objetos en JavaScript</title>
+
+</head>
+
+<body>
+
+    <div class="container bg-white">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="../img/js.png" class="bi me-2" width="48" height="48">
+                <span class="fs-4">Objetos en JavaScript</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Ejemplo 1</a></li>
+                <li class="nav-item"><a href="ejemplo2.html" class="nav-link">Ejemplo 2</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo3.html" class="nav-link">Ejemplo 3</a></li>
+                <li class="nav-item"><a href="ejemplo4.html" class="nav-link">Ejemplo 4</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo5.html" class="nav-link">Ejemplo 5</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo6.html" class="nav-link active" aria-current="page">Ejemplo 6</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Registro de Usuario</h4>
+
+                            <form action="javascript:void(0)" name="frmmat" id="frmmat">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="nombre">
+                                                <i class="bi bi-person"></i> Nombres
+                                            </label>
+                                            <input type="text" name="nombre" id="nombre" required="required"
+                                                placeholder="(Su nombre)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="apellido">
+                                                <i class="bi bi-person"></i> Apellidos
+                                            </label>
+                                            <input type="text" name="apellido" id="apellido" required="required"
+                                                placeholder="(Su apellido)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="fechaNacimiento">
+                                                <i class="bi bi-calendar"></i> Fecha de Nacimiento
+                                            </label>
+                                            <input type="date" name="fechaNacimiento" id="fechaNacimiento" required="required"
+                                                placeholder="(Su fecha de Nacimiento)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="email">
+                                                <i class="bi bi-envelope"></i> Correo
+                                            </label>
+                                            <input type="email" name="email" id="email" required="required"
+                                                placeholder="(Su correo electronico)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="username">
+                                                <i class="bi bi-person"></i> Usuario
+                                            </label>
+                                            <input type="text" name="username" id="username" required="required"
+                                                placeholder="(Su correo electronico)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="password">
+                                                <i class="bi bi-unlock"></i> Constraseña
+                                            </label>
+                                            <input type="text" name="password" id="password" required="required"
+                                                placeholder="(Su correo electronico)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <button id="registrarPersona" type="button" class="btn btn-primary">
+                                            <i class="bi bi-car-front-fill"></i> Registrar informacion
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <button id="mostrarInformacion" type="button" class="btn btn-success">
+                                            <i class="bi bi-car-front-fill"></i> Mostrar informacion
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                <div class="col-12">
+                    <h4>Alumnos registrados</h4>
+                    <div id="idDivResultado" class="fs-6 p-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/regsitro.js" defer></script>
+
+</body>
+
+</html>

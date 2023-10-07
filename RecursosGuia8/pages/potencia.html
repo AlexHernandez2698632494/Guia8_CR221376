@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Objetos en JavaScript</title>
+
+</head>
+
+<body>
+
+    <div class="container bg-white">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="../img/js.png" class="bi me-2" width="48" height="48">
+                <span class="fs-4">Objetos en JavaScript</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Ejemplo 1</a></li>
+                <li class="nav-item"><a href="ejemplo2.html" class="nav-link">Ejemplo 2</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo3.html" class="nav-link">Ejemplo 3</a></li>
+                <li class="nav-item"><a href="ejemplo4.html" class="nav-link active" aria-current="page">Ejemplo 4</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo5.html" class="nav-link">Ejemplo 5</a></li>
+                <li class="nav-item"><a href="ejemplo6.html" class="nav-link">Ejemplo 6</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Calculadora de Potencia</h4>
+
+                            <form id="powerForm">
+                                <label for="base">Base:</label>
+                                <input type="number" id="base" required><br>
+                                <label for="exponent">Potencia:</label>
+                                <input type="number" id="exponent" required><br>
+                                <button id="calcularBtn" type="button" class="btn btn-success">
+                                    <i class="bi bi-book"></i> Enviar informacion
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                <div class="col-12">
+                    <h4>Resultado:</h4>
+                    <div id="result" class="fs-6 p-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/potencia.js" defer></script>
+
+</body>
+
+</html>
